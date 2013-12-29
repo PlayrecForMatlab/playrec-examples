@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Playrec-examples by PlayrecForMatlab</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Playrec-examples</h1>
+        <p>Examples of how to use playrec in Matlab/Octave, including some basic functionality that may be useful in other scenarios</p>
+
+        <p class="view"><a href="https://github.com/PlayrecForMatlab/playrec-examples">View the Project on GitHub <small>PlayrecForMatlab/playrec-examples</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/PlayrecForMatlab/playrec-examples/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/PlayrecForMatlab/playrec-examples/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/PlayrecForMatlab/playrec-examples">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="playrec-example-scripts" class="anchor" href="#playrec-example-scripts"><span class="octicon octicon-link"></span></a>Playrec Example Scripts</h1>
+
+<p>This repo contains a number of scripts that give examples of how to use Playrec, and provide some basic functionality that may be useful in other scenarios. Scripts include:</p>
+
+<h2>
+<a name="test_playrec" class="anchor" href="#test_playrec"><span class="octicon octicon-link"></span></a>test_playrec</h2>
+
+<p>Checks if playrec is available and then runs 3 output tests on a selected output device. The first test shows simple blocking output, the second uses simple non-blocking output and the third shows how continuous output can be achieved without needing to precalculate all samples.</p>
+
+<h2>
+<a name="select_play_device" class="anchor" href="#select_play_device"><span class="octicon octicon-link"></span></a>select_play_device</h2>
+
+<p>Displays a textual list of all available output devices in the command window, and waits for user input to select. Only a valid device number can be selected.</p>
+
+<h2>
+<a name="select_rec_device" class="anchor" href="#select_rec_device"><span class="octicon octicon-link"></span></a>select_rec_device</h2>
+
+<p>Displays a textual list of all available record devices in the command window, and waits for user input. Only a valid device number can be selected.</p>
+
+<h2>
+<a name="play_wav" class="anchor" href="#play_wav"><span class="octicon octicon-link"></span></a>play_wav</h2>
+
+<p>Plays a mono or stereo wav file using Playrec. The samples are loaded from the file in sections, demonstrating how to create a continuous output without glitches.</p>
+
+<h2>
+<a name="play_ambi_wav" class="anchor" href="#play_ambi_wav"><span class="octicon octicon-link"></span></a>play_ambi_wav</h2>
+
+<p>Plays a WAVEX Ambisonic Wav file using Playrec. The samples are loaded from the file and converted to the required output in sections, demonstrating how to create a continuous output without glitches. This utilises wavexread.m, a version of wavread modified by Sylvain Choisel to read wave-format-extensible files.</p>
+
+<h2>
+<a name="spectrum_analyser" class="anchor" href="#spectrum_analyser"><span class="octicon octicon-link"></span></a>spectrum_analyser</h2>
+
+<p>Uses Playrec to show a realtime spectrum and waveform, and some of the possibilities that Playrec can be used for.</p>
+
+<h2>
+<a name="bformat_dec" class="anchor" href="#bformat_dec"><span class="octicon octicon-link"></span></a>bformat_dec</h2>
+
+<p>Decodes a B-Format signal into speaker feeds, as used by play_ambi_wav.</p>
+
+<h2>
+<a name="bformat_enc" class="anchor" href="#bformat_enc"><span class="octicon octicon-link"></span></a>bformat_enc</h2>
+
+<p>Encodes a mono signal into a B-Format signal at a specified azimuth and elevation.</p>
+
+<h2>
+<a name="bformat_rot_tilt_tumble" class="anchor" href="#bformat_rot_tilt_tumble"><span class="octicon octicon-link"></span></a>bformat_rot_tilt_tumble</h2>
+
+<p>Rotates, tilts and tumbles a B-Format signal.</p>
+
+<h2>
+<a name="loop_back" class="anchor" href="#loop_back"><span class="octicon octicon-link"></span></a>loop_back</h2>
+
+<p>Demonstrates simultaneous input and output by looping an input channel onto one or more outputs. By optimising parameters the latency can be reduced, depending on the target platform.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/PlayrecForMatlab">PlayrecForMatlab</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-3319302-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
